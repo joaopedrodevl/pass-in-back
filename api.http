@@ -1,0 +1,31 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Evento de teste",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/41796aca-b0e7-449e-8ce1-a77546709381/attendees
+Content-Type: application/json
+
+{
+    "name": "Joao Pedro",
+    "email": "joaop@email.com"
+}
+
+###
+
+GET http://localhost:3333/events/41796aca-b0e7-449e-8ce1-a77546709381
+
+###
+GET http://localhost:3333/attendees/8/badge
+
+###
+GET http://localhost:3333/attendees/8/check-in
+
+###
+GET http://localhost:3333/events/41796aca-b0e7-449e-8ce1-a77546709381/attendees?query=joao

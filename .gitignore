@@ -1,0 +1,5 @@
+node_modules
+.env
+nginx.conf
+compose.yml
+prisma
